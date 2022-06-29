@@ -1,0 +1,61 @@
+/*      最上層導覽列      */
+
+/* 背景顏色 */
+body{
+    background-color: gray;
+}
+
+/*最上層導覽列-高度*/
+nav{
+    height:70px;
+}
+
+/*最上層導覽列-顏色*/
+.navbar{
+    background-color: rgb(221, 219, 219);
+}
+
+/* 導覽字體顏色 */
+li a {
+    color:rgb(19, 19, 18) !important;
+    font-size:20px;
+}
+
+/* 導覽字體-滑鼠指向顏色 */
+li a:hover{
+    color:indigo !important;
+    background-color: lightyellow;
+    
+}
+
+/* 導覽字體-滑鼠指向顏色 */
+.navbar-toggler{
+    background-color: lightgray;
+}
+
+.nav-link {
+    padding:20px;
+}
+
+
+
+ /* RWD響應式 寬度小於600px會啟動 */
+ 
+@media (max-width:600px){
+    nav{
+        height:auto;
+    }
+    .nav-link {
+        padding:10px;
+    }
+
+    .fblogin{
+        padding: 10px;
+    }
+
+    .fbchick{
+        padding: 10px;
+    }
+
+}
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+
+<!-- 繁體中文 -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<script src="./personal/MemberJS/jquery-M.js"></script>
+<script src="./personal/MemberJS/Member.js"></script>
+
+<link rel="stylesheet"
+	href="./personal/MemberCSS/jquery-ui.css">
+<link rel="stylesheet"
+	href="./personal/MemberCSS/jquery-ui.structure.css">
+<link rel="stylesheet"
+	href="./personal/MemberCSS/jquery-ui.theme.css">
+
+<script src="./personal/MemberJS/jquery.js"></script>
+<script src="./personal/MemberJS/jquery-ui.js"></script>
+<script src="./personal/MemberJS/datepicker-zh-TW.js"></script>
+
+<!-- 響應式網站 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 載入 Bootstrap 的CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+	crossorigin="anonymous">
+
+<!-- 小圖示連結FontAwesome -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+<!-- 連結內容CSS-style.css -->
+<link rel="stylesheet" href="./personal/accountSet.css">
+
+
+
+
+
+</head>
+
+<body >
+	<!-- 最上層-logo條  -->
+	<nav class="navbar navbar-expand-lg navbar-light">
+	
+		
+		<div class="container-fluid" >
+			<!-- 品牌logo -->
+			 <a class="navbar-brand" href="#"  > 
+			 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;&emsp;
+			  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+			 <img width="100px" height="50px" 
+				src="./img/Spairs-removebg.png"></a>
+
+		</div>
+	</nav>
+	
+
+
+ <div class="row connect" style= "background-color: beige">
+ 
+  <div class="col-4 sidenav" style= "background-color: beige">
+  </div>
+ 
+  <!-- 中間層  -->
+ 	 <div class="col-sm-4 main-content text-left">
+	 
+	 
+    <br>
+	<h2>
+	&emsp;&nbsp;<i class="fa-solid fa-user-gear">&nbsp;&nbsp;</i>個人檔案設定
+	</h2>
+	
+	
+	<br><br>
+			<form method="post" action="AccountUploadImage"
+					enctype="multipart/form-data">
+					<tr>
+						<td><i class="fa-solid fa-photo-film">&nbsp;&nbsp;&nbsp;</i>個人頭像</td>
+						<br>
+						<td><input type="file" name="UserImg" size="5000" /></td>
+					</tr>
+					<tr>
+						<td><input type="submit" value="儲存"></td>
+					</tr>
+				</form><br>
+	
+
+	
+		<form action="AccountSet" method="post">
+
+			<label for="userName"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;&nbsp;暱稱：</label> 
+			<input type="text" id="userName"
+				name="userName" placeholder="請輸入"><br> <br> 
+			<label for="date"><i
+						class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;&nbsp;&nbsp;生日：</label> 
+			<input type="text" id="date_picker" name="date_picker" readonly="true" value="2000/01/01"
+				placeholder="請輸入"><br> <br>
+			<label for="gender"><i class="fa-solid fa-venus-mars"></i>&nbsp;&nbsp;&nbsp;性別：</label>
+			<input type="radio" name="gender" value="M" CHECKED> 男 <input type="radio" name="gender" value="F"> 女<br><br>
+			 <label for="city"><i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;居住地：</label> <select id="city" name="city">
+				<optgroup label="◆北">
+						<option value="c1">基隆市</option>
+						<option value="c2">新北市</option>
+						<option value="c3">台北市</option>
+						<option value="c4">桃園市</option>
+						<option value="c5">新竹縣</option>
+						<option value="c6">新竹市</option>
+						<option value="c7">苗栗縣</option>
+					<optgroup label="◆中">	
+						<option value="c8" selected>台中市</option>
+						<option value="c9">彰化縣</option>
+						<option value="c10">南投縣</option>
+					<optgroup label="◆南">
+						<option value="c11">雲林縣</option>
+						<option value="c12">嘉義縣</option>
+						<option value="c13">嘉義市</option>
+						<option value="c14">台南市</option>
+						<option value="c15">高雄市</option>
+						<option value="c16">屏東縣</option>
+					<optgroup label="◆東">
+						<option value="c17">宜蘭縣</option>
+						<option value="c18">花蓮縣</option>
+						<option value="c19">台東縣</option>
+					<optgroup label="◆離島">
+						<option value="c20">澎湖縣</option>
+			</select><br> <br>
+			<label for="job">&nbsp;<i
+						class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;&nbsp;職業：職業：</label> <select
+				id="job" name="job">
+				<option value="j1">行政</option>
+				<option value="j2">金融</option>
+				<option value="j3">行銷</option>
+				<option value="j4">業務</option>
+				<option value="j5">餐飲</option>
+				<option value="j6">資訊</option>
+				<option value="j7">技術</option>
+				<option value="j8">資材</option>
+				<option value="j9">製圖</option>
+				<option value="j10">傳播藝術</option>
+				<option value="j11">傳媒</option>
+				<option value="j12">醫療</option>
+				<option value="j13">教育</option>
+				<option value="j14">研發</option>
+				<option value="j15">品保</option>
+				<option value="j16">軍警消</option>
+				<option value="j17">其他</option>
+			</select><br> <br> 
+			<label for=""><i
+						class="fa-solid fa-kitchen-set"></i>&nbsp;&nbsp;&nbsp;技能：</label><br> <input
+				type="checkbox" name="skill" id="fitness" value="s1"> <label
+				for="fitness">健身</label> <input type="checkbox" name="skill"
+				id="camera" value="s2"> <label for="camera">攝影</label> <input
+				type="checkbox" name="skill" id="climbing" value="s3"> <label
+				for="climbing">爬山</label> <input type="checkbox" name="skill"
+				id="language" value="s4"> <label for="language">語言</label> <input
+				type="checkbox" name="skill" id="bake" value="s5"> <label
+				for="bake">烘焙</label> <input type="checkbox" name="skill" id="sing"
+				value="s6"> <label for="sing">唱歌</label><br> <input
+				type="checkbox" name="skill" id="dance" value="s7"> <label
+				for="dance">跳舞</label> <input type="checkbox" name="skill"
+				id="catering" value="s8"> <label for="catering">餐飲</label> <input
+				type="checkbox" name="skill" id="music" value="s9"> <label
+				for="music">音樂</label> <input type="checkbox" name="skill"
+				id="computer" value="s10"> <label for="computer">電腦</label>
+			<input type="checkbox" name="skill" id="invest" value="s11">
+			<label for="invest">投資</label> <input type="checkbox" name="skill"
+				id="eSpots" value="s12"> <label for="eSpots">電競</label><br>
+			<input type="checkbox" name="skill" id="magic" value="s13"> <label
+				for="magic">魔術</label> <input type="checkbox" name="skill"
+				id="painting" value="s14"> <label for="painting">繪畫</label>
+			<input type="checkbox" name="skill" id="sports" value="s15">
+			<label for="sports">運動</label><br>
+			<br>
+
+			&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+			<button id="btnGet">儲存</button>
+		</form>
+	</div>
+ </div>
+
+
+
+	<div class="col-sm-2 main-content"></div>
+
+	<!-- Boostrap JavaScript -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+		crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

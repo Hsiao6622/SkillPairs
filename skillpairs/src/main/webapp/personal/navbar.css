@@ -1,0 +1,28 @@
+/*      最上層導覽列      */
+
+/* 背景顏色 */
+body{
+    background-color: beige;
+}
+
+/*最上層導覽列-高度*/
+nav{
+    height:70px;
+}
+
+/*最上層導覽列-顏色*/
+.navbar{
+    background-color: rgb(221, 219, 219);
+}
+
+
+ /* RWD響應式 寬度小於600px會啟動 */
+ 
+@media (max-width:600px){
+    nav{
+        height:auto;
+    }
+    .nav-link {
+        padding:10px;
+    }
+}

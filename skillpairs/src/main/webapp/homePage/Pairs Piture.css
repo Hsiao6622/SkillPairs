@@ -1,0 +1,96 @@
+
+/* 首頁中間-相片區底色 */
+#latest{
+    padding: 50px 0px;
+    background: rgb(255, 255, 255);
+   
+}
+
+
+/* 相片區男女介紹與底部距離 */
+#latest h3{
+    margin-bottom: 80px;
+}
+
+/* 圖片使用最大寬度 */
+#latest img{
+    width: 100%;
+    height: 30vw;
+}
+
+/* (圖片內)文字-ALL位置調整 */
+#latest .innertext{
+    position:absolute;
+    bottom: -65px;
+    left: 25px;
+}
+
+/* 上方(圖片內)-技能 樣式調整 padding: 高 寬 ，border-radius 半徑量 */
+#latest .innertext span{
+    background-color: rgb(49, 51, 51);
+    padding: 1px 20px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+
+/*  上方(圖片內)-男女:區域 樣式調整    */
+#latest .innertext h3{
+    background-color: rgb(240, 238, 238);
+    padding: 1px 20px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+
+/* 上方(圖片內)內容文字-大小調整 */
+.innertext h3{
+    font-size: 20px;
+}
+
+/* upper上層相對位置 */
+#latest .upper{
+    position: relative;
+}
+
+
+/* 第一張上方(圖片內)文字-介紹調整 */
+#latest .innertext h3{
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+/* lower下層標題 */
+#latest .lower h3{
+    font-size: 20px;
+    margin-bottom: 10px ;
+    margin-top: 10px;
+    font-weight:bold;
+}
+
+/* 上區塊背景 */
+#latest .outer{
+    background: rgb(241, 240, 240);
+    box-shadow: rgba(172, 164, 164, 0.08);
+    
+}
+
+/* 下區塊背景 */
+#latest .lower{
+    background: rgb(209, 208, 208);
+    padding: 10px 20px 15px 20px;
+}
+
+/* 整區塊點選-超連結(顏色、消除底線) */
+#latest a{
+    color: black;
+    text-decoration:none;
+}
+
+
+
+
+
+
+
+

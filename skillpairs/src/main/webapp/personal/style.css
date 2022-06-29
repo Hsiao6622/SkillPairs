@@ -1,0 +1,117 @@
+   /*       左中右畫面      */
+
+    
+    /* 左右間距調整 */
+    .sidenav {
+        height: 900px; 
+        width: 210px; 
+        padding-top: 30px;
+        background-color: rgb(112, 106, 106);
+    }
+
+    /* 左測導覽-標體SKill Pairs ， bold粗體 */
+    .sidenav h4 {
+        font-weight:bold;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 25px;
+    }
+
+    /* 左測導覽-選單字體大小(首頁、配對主頁...) */
+    .sidenav div a{
+        font-size: 16px; 
+    }
+    
+    /* 左導覽-滑鼠指向顏色 */
+    .sidenav a:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    /* 左導覽-標籤底色 */
+    .page {
+        background-color: rgb(26, 25, 25);
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* 左側-標籤 */
+    .sidenav a {
+        text-align: left;
+        text-decoration: none;
+        color: rgb(254, 253, 255);
+        font-size: 22px;
+        padding: 20px;
+    }
+    
+    /* 左導覽-滑鼠指向背景顏色 */
+    .page:hover {
+        background-color: rgb(145, 143, 143);
+        transition: 1s;
+    }
+    
+    /* 中間-全部背景顏色 */
+    .main-content {
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+    }
+
+    /* 中間上方標題-個人檔案 */
+    h2{
+        background-color: rgb(49, 51, 51);
+        padding: 1px 20px;
+        border-radius: 10px;
+        color: aliceblue;
+    }
+
+    /* 自我介紹 */
+    #introduction{
+        border-radius: 5px;
+        resize:none ;
+        width:400px;
+        height:100px; 
+        overflow-y:scroll
+    }
+
+    /* 下方button */
+    #btnGet{
+        background-color: rgb(212, 218, 218);
+        border-radius: 5px;
+        border-color: rgb(44, 43, 43)
+    }
+
+    /* form-button不換行 */
+    #form{
+        margin:0px;
+        display:inline
+    }
+    
+    /* 中間上方標題-偏好設定 */
+    h2{
+        background-color: rgb(49, 51, 51);
+        padding: 1px 20px;
+        border-radius: 10px;
+        color: aliceblue;
+    }
+    
+    
+    /* form-button不換行 */
+    #form{
+        margin:0px;
+        display:inline
+    }
+
+    /* RWD響應式 寬度小於600px會啟動 */
+    @media (max-width:600px) {
+        /* 右欄位 */
+        .sidenav {
+        height: auto;
+        }
+        /* 中間欄位 */
+        .content {
+        height: auto;
+        }
+        /* 左導覽上下空格 */
+        .page {
+        margin-bottom: 10px;
+        }
+    }

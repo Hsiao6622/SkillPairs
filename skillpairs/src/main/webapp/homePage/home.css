@@ -1,0 +1,139 @@
+   /*       左中右畫面      */
+
+
+   /* 最底層 padding-文字間格外框距離*/
+    footer {
+        background-color: rgb(89, 94, 99);
+        padding: 10px;
+        height: 45px;
+        
+    }
+    /* 超連結顏色 去除底線 */
+    footer a{
+        text-decoration:none;
+        color: aliceblue;
+        font-size: 17px;
+
+    }
+    /* 超連結滑鼠指到變色 */
+    footer a:hover {
+        color: rgb(201, 197, 197);
+    }
+    /* 點完超連結所呈現的顏色 */
+    footer a:visited{
+        color: aliceblue;
+    }
+
+    
+    /* 左間距調整 */
+    .sidenav {
+        height: 1400px;
+        width: 210px;
+        padding-top: 30px;
+        background-color: rgb(112, 106, 106);
+    }
+
+    /* 右間距調整 */
+    .sidenav1{
+        height: 1400px;
+        width: 210px;
+        background-color: rgb(112, 106, 106);
+    }
+
+    /* 左測導覽-標體SKill Pairs ， bold粗體 */
+    .sidenav h4 {
+        font-weight:bold;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        padding: 25px;
+    }
+
+    /* 左測導覽-選單字體大小(首頁、配對主頁...) */
+    .sidenav div a{
+        font-size: 16px; 
+    }
+    
+    /* 右側-廣告字體 */
+    .sidenav a {
+        text-align: left;
+        text-decoration: none;
+        color: rgb(254, 253, 255);
+        font-size: 22px;
+        padding: 20px;
+    }
+    
+    /* 左導覽-滑鼠指向顏色 */
+    .sidenav a:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    /* 左導覽-標籤底色 */
+    .page {
+        background-color: rgb(26, 25, 25);
+        width: 100%;
+        padding: 8px;
+    }
+    
+    /* 左導覽-滑鼠指向背景顏色 */
+    .page:hover {
+        background-color: rgb(145, 143, 143);
+        transition: 1s;
+    }
+    
+    /* 中間-全部背景顏色 */
+    .main-content {
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+    }
+    
+    /* 中間-字體 */
+    .main-content h1 {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    /* 右廣告-border外框顏色、background底色 */
+    .ad {
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid rgb(27, 27, 27);
+        background-color:beige;
+        border-radius: 10px;
+    }
+
+    /* #slideshow{
+        width: 100%;
+        height: 100%;
+    } */
+    
+    /* RWD響應式 寬度小於600px會啟動 */
+    @media (max-width:600px) {
+        /* 右欄位 */
+        .sidenav {
+             height: auto;
+        }
+        /* 中間欄位 */
+        .content {
+             height: auto;
+        }
+        /* 左導覽上下空格 */
+        .page {
+             margin-bottom: 10px;
+        }
+
+        /* 中間幸福配對上下空格 */
+        .col-md-6{
+            margin-bottom: 10px;
+        }
+
+        .latest img{
+            height: auto;
+            min-height:500px; 
+
+        }
+
+        footer{
+            height: auto;
+        }
+    }
+    

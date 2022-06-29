@@ -1,0 +1,219 @@
+/*            關於about.html             */
+
+/* 背景顏色 */
+body {
+    font-size: 25px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 標題 */
+h3 {
+    text-align: center;
+    font-size: 35px;
+    padding: 30px;
+}
+
+/* 圖片大小，padding控制與邊框距離 */
+img {
+    width: 100%;
+    padding: 15px;
+}
+
+/*                           box Skill Pairs區塊 ，1fr 為一區塊 ， 1fr 1fr 為兩區塊 依此類推~               */
+/* margin: 上 右 下 左 */
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 30px;
+    background-color: rgb(77, 136, 170);
+    margin: 30px 100px 30px 100px;
+}
+/* box Skill Pairs 內容 */
+.box p{
+    padding: 12px;
+    color: rgb(255, 255, 255);
+}
+/* box Skill Pairs 底色風格 */
+.container .box  h4{
+    background: rgb(187,219,233);
+    background: linear-gradient(90deg, rgba(187,219,233,1) 0%, rgba(90,169,240,1) 27%, rgba(95,154,232,1) 75%, rgba(195,228,241,1) 100%);
+    padding: 0px 5px;
+    border-radius: 0px;
+    color: aliceblue;
+    width: 100%;
+}
+
+
+/*                                             box1 區塊                                 */
+.box1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 30px;
+    background-color: rgb(47, 48, 49);
+    margin: 30px 100px 30px 100px;
+}
+/* box1 內容 */
+.box1 p{
+    padding: 0px;
+    color: aliceblue;
+}
+/* box1 名子底色風格 */
+.container .box1  h4{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgb(0,0,0) 0%, rgba(167,163,163,1) 27%, rgba(145,141,141,1) 75%, rgb(0,0,0) 100%);
+    padding: 0px 5px;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+
+/*                                             box2 區塊                                              */
+.box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 30px;
+    background-color: rgb(202, 205, 207);
+    margin: 30px 100px 30px 100px;
+}
+/*  box2 內容  */
+.box2 p{
+    padding: 0px;
+    color: rgb(0, 0, 0);
+}
+/* box2 名子底色風格 */
+.container .box2  h4{
+    background: rgb(202,205,207);
+    background: linear-gradient(90deg, rgb(202,205,207) 0%, rgba(255,255,255,1) 27%, rgba(255,255,255,1) 75%, rgb(202,205,207) 100%);
+    padding: 0px 5px;
+    border-radius: 0px;
+    color: rgb(7, 7, 7);
+    width: 100%;
+}
+
+
+/* 所有box Skill Pairs、box1、box2 字體大小 */
+.description p{
+    font-size: 15px;
+}
+
+/* 名子 */
+h4{
+    padding: 10px;
+    text-align: center;
+    font-weight:bold;
+}
+
+/* 連結-目前無內容 */
+a {
+    text-decoration: none;
+    color: brown;
+}
+
+
+
+
+
+/*                                   左中右畫面                              */
+
+
+   /* 最底層 padding-文字間格外框距離*/
+   footer {
+    background-color: rgb(89, 94, 99);
+    padding: 10px;
+    height: 45px;
+    
+}
+/* 超連結顏色 去除底線 */
+  footer a{
+    text-decoration:none;
+    color: aliceblue;
+    font-size: 17px;
+
+}
+/* 超連結滑鼠指到變色 */
+footer a:hover {
+    color: rgb(201, 197, 197);
+}
+/* 點完超連結所呈現的顏色 */
+footer a:visited{
+    color: aliceblue;
+}
+
+
+
+
+
+
+/* 左間距調整 */
+.sidenav {
+    height: 3300px;
+    width: 210px;
+    padding-top: 30px;
+    background-color: rgb(112, 106, 106);
+}
+
+/* 左測導覽-標體SKill Pairs ， bold粗體 */
+.sidenav h4 {
+    font-weight:bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+}
+
+/* 左測導覽-選單字體大小(首頁、配對主頁...) */
+.sidenav div a{
+    font-size: 16px; 
+}
+
+/* 右側-廣告字體 */
+.sidenav a {
+    text-align: left;
+    text-decoration: none;
+    color: rgb(254, 253, 255);
+    font-size: 22px;
+    padding: 20px;
+}
+
+/* 左導覽-滑鼠指向顏色 */
+.sidenav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* 左導覽-標籤底色 */
+.page {
+    background-color: rgb(26, 25, 25);
+    width: 100%;
+    padding: 8px;
+}
+
+/* 左導覽-滑鼠指向背景顏色 */
+.page:hover {
+    background-color: rgb(145, 143, 143);
+    transition: 1s;
+}
+
+/* 中間-全部背景顏色 */
+.main-content {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+
+/* RWD響應式 寬度小於600px會啟動 */
+@media (max-width:600px) {
+
+    /* 中間欄位 */
+    .container {
+    height: auto;
+    }
+
+    /* 左導覽上下空格 */
+    .page {
+    margin-bottom: 10px;
+    }
+
+    footer{
+        height: auto;
+    }
+}

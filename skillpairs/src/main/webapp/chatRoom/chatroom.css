@@ -1,0 +1,34 @@
+.people1 {
+    background-color: aquamarine;
+    height: 100px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.people5 {
+    background-color: aquamarine;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    background-color: rgb(147, 194, 116);
+    width: 20%;
+}
+
+.right{
+    background-color: yellow;
+    width: 80%;
+}
+
+.rUp{
+    background-color: rgb(131, 182, 182);
+    height: 50%;
+}
+
+.rDown{
+    background-color: rgb(170, 138, 200);
+    height: 50%;
+}

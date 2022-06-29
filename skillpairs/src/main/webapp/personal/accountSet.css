@@ -1,0 +1,48 @@
+    /* 中間-全部背景顏色 */
+    .main-content {
+        background-color:  beige;
+        padding: 0px;
+    }
+
+
+#left{
+	height:1000px;
+}
+
+/*最上層導覽列-高度*/
+nav{
+    height:70px;
+}
+
+/*最上層導覽列-顏色*/
+.navbar{
+    background-color: rgb(221, 219, 219);
+}
+
+
+    h2{
+        background-color: rgb(49, 51, 51);
+        padding: 1px 20px;
+        border-radius: 10px;
+        color: aliceblue;
+    }
+
+
+ /* RWD響應式 寬度小於600px會啟動 */
+ 
+@media (max-width:600px){
+    nav{
+        height:auto;
+    }
+    .nav-link {
+        padding:10px;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+/*        配對主頁-1 中區塊  外框border: 1.5px solid #000000;            */
+.uName {
+	border: 4px;
+    background-color: rgb(220, 226, 226);
+    height: 30px;
+    margin: 5px;
+}
+
+
+
+.uAge {
+    background-color: rgb(220, 226, 226);
+    height: 30px;
+    margin: 5px;
+}
+
+.uCity {
+    background-color: rgb(220, 226, 226);
+    height: 30px;
+    margin: 5px; 
+}
+
+.uJob {
+    background-color: rgb(220, 226, 226);
+    height: 30px;
+    margin: 5px;
+}
+
+.uSkill {
+    background-color: rgb(220, 226, 226);
+    height: 75px;
+    margin: 5px;  
+}
+
+
+
+/* 自我介紹 */
+#introduction1{
+    border-radius: 5px;
+    resize:none ;
+    width:370px;
+    height:100px; 
+    overflow-y:scroll;
+    background-color: rgb(220, 226, 226);
+    height: 90px;
+    margin: 5px;
+}

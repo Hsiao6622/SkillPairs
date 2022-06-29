@@ -1,0 +1,51 @@
+div.chuans {
+    float: left;
+    position: relative;
+    width: 240px;
+    height: 20rem;
+    border-radius: 3px;
+    border: 1px dashed #ccc;
+    margin: auto;
+    overflow: hidden;
+}
+
+div.chuans::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    margin-left: -40px;
+    margin-top: -1px;
+    border-top: 2px solid;
+}
+
+div.chuans .shu {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 80px;
+    margin-left: -1px;
+    margin-top: -40px;
+    border-left: 2px solid;
+}
+
+div.chuans img {
+    position: absolute;
+    background-size: contain;
+    max-width: 238px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+input.uploadImg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 999;
+}
